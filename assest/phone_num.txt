@@ -1,12 +1,4 @@
-from automation import __version__
-from automation.automation import *
-
-
-def test_version():
-    assert __version__ == '0.1.0'
-
-def test_method():
-    excepted = """88-22-5501
+88-22-5501
 54-744-9276
 54-744-9276
 21-45-8157
@@ -217,9 +209,4 @@ def test_method():
 47.605.1245
 85-72-0044
 77-267-8311
-77-267-8311"""
-    actual = collection()
-    print(actual)
-    assert actual == excepted
-
-    
+77-267-8311

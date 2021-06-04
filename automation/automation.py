@@ -9,14 +9,14 @@ def collection():
         file=file.read()
         find_email=re.findall(reg_email,file)
         find_phone_num=re.findall(reg_phone,file)
-
-        # print(find_email,len(find_email))
-        # print(find_phone_num)
+        str_file_email = '\n'.join(find_email)
+        str_file_phone_num = '\n'.join(find_phone_num)
+        # print(str_file_email)
     with open('assest/email.txt','w+') as file:
-        file.write(str(find_email))
+            file.write(str(str_file_email))
     with open('assest/phone_num.txt','w+') as file:
-        file.write(str(find_phone_num))
-    print(find_email)
-    
+        file.write(str(str_file_phone_num))
+    print(str_file_phone_num)
+    return str_file_phone_num
 
 collection()
